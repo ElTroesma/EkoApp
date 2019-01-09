@@ -1,0 +1,239 @@
+/* Fonts */
+
+@font-face {
+    font-family: Dinn;
+    src: url(../fonts/dinn.TTF)
+}
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.wrapper {}
+.align {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Main Header Styles */
+
+.main-header {
+    background: linear-gradient(#212121, #00000000);
+}
+.main-header-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+/* Main Header Logo Styles */
+
+.main-header-logo-container {}
+.main-header-logo {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+/* Main Header Navigation Styles */
+
+.main-header-navigation-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.main-header-navigation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.main-header-link {
+    text-decoration: none;
+    color: #fff;
+    transition: all 200ms ease-in;
+}
+.main-header-li {
+    margin: 10px 0;
+}
+.sale-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.sale-logo .main-header-li {
+    font-family: Dinn;
+    font-size: 20px;
+}
+
+/* DropDown Container */
+
+.dropdown-container {
+    position: relative;
+    margin: 10px auto;
+}
+.dropdown-container:hover > .dropdown {
+    display: block;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+.dropdown-list-container {
+    display: grid;
+    width: 175px;
+    list-style-type: none;
+    background: #00000087;
+}
+.dropdown-list-link {
+    text-decoration: none;
+    color: #fff;
+}
+.dropdown-list-li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 200ms ease-in;
+}
+.dropdown-help {
+    width: 125px;
+    border-bottom: solid 4px #e80781;
+}
+.dropdown-fa {
+    padding: 10px 12px;
+}
+.dropdown-fa:hover {
+    background: #00000087;
+}
+.dropdown-hr {
+    width: 80%;
+    margin: auto;
+    background: none;
+    border: solid 0.5px #fff;
+}
+
+/* Header Colors*/
+
+.woman-selected {
+    color: #e80781;
+}
+.woman-selected:hover {
+    color: #fff;
+    transition: color 200ms ease-in;
+}
+.woman-hover:hover {
+    color: #e80781;
+    transition: color 200ms ease-in;
+}
+/* Sale Logo Colors */
+.woman-sale-logo {
+    background: #e80781;
+}
+.man-sale-logo {
+    background: #00a9dd;
+}
+.kid-sale-logo {
+    background: #ffa600;
+}
+.dropdown-whover:hover {
+    background: #e80781;
+    transition: background 200ms ease-in;
+}
+
+/* Main Header Form Styles */
+
+.main-header-form-container {
+    display: flex;
+    align-items: center;
+}
+.main-header-form-left, .main-header-form-right {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+.header-left-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+    border-bottom: solid 1px #fff;
+}
+.header-login-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 200ms ease-in;
+}
+.header-login-link i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.header-left-bottom {}
+#signup {
+    margin-top: 10px;
+}
+.main-header-form-right {
+    float: right;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 10%;
+}
+.chart-container {
+    border: none;
+    margin: 0;
+    width: fit-content;
+}
+.chart-counter-container {
+    border-left: solid 1px #fff;
+    margin-left: 8px;
+}
+.chart-counter {
+    margin-left: 8px;
+    color: #fff;
+}
+.chart-input-container {
+    display: flex;
+    align-items: center;
+}
+.chart-form {
+    display: flex;
+    align-items: center;
+}
+.chart-input {
+    width: 140px;
+    height: 30px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: solid 1px #908c8b;
+    background: #dad8d7;
+    color: #212121;
+    font-size: 12px;
+}
+.chart-button {
+    border: none;
+    background: none;
+    color: #fff;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: 5px;
+}
