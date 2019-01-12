@@ -21,6 +21,10 @@
 /* Main Header Styles */
 
 .main-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
     background: linear-gradient(#212121, #00000000);
 }
 .main-header-grid {
@@ -236,4 +240,39 @@
     cursor: pointer;
     font-size: 22px;
     margin-left: 5px;
+}
+
+/* Home Section Styles */ 
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.woman-section {
+    background-image: url(../media/w-banner.jpg);
+}
+.home-detail-container {
+    width: 35%;
+    float: right;
+    margin-top: 5vh;
+}
+.home-detail-container img {
+    width: 100%;
+}
+.arrow-down-aligner {
+    position: absolute;
+    bottom: 0;
+    width: 1200px;
+}
+.arrow-down-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+}
+.arrow-down-container a {
+    color: #fff;
+    font-size: 70px;
+    transition: all 200ms ease-in;
 }
