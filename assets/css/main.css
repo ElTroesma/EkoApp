@@ -286,6 +286,8 @@
     padding-top: 60px;
 }
 .waside-detail {
+    padding-bottom: 40px;
+    box-sizing: border-box;
     background-image: url(../media/waside-detail.png);
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -295,7 +297,10 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
-.main-aside {}
+.main-aside {
+    padding-right: 10px;
+    box-sizing: border-box;
+}
 .aside-title-gender {
     font-family: Dinn;
     font-size: 40px;
@@ -417,4 +422,91 @@
 }
 .article-price {
     margin-top: 5px;
+}
+
+/* Main Footer Styles */
+
+.main-footer {
+    width: 100%;
+    background: #cccccc;
+}
+.footer-aligner {
+    display: grid;
+    grid-template-columns: 190px 580px 1fr;
+    width: 900px;
+    padding: 65px 0;
+    background-image: url(../media/footer-detail.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 40%;
+}
+.footer-left {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.footer-logo-container {
+    width: 175px;
+    margin: 0 auto;
+}
+.footer-logo {
+    width: 100%;
+}
+.social-networks {
+    display: flex;
+    justify-content: center;
+    width: 190px;
+}
+.social-networks li {
+    margin: auto;
+    font-size: 24px;
+}
+.social-networks a {
+    color: #fff;
+    transition: all 200ms ease-in;
+}
+.social-networks a:hover {
+    transition: all 200ms ease-in;
+    color: #212121;
+}
+.footer-form {
+    padding: 0 10px;
+}
+.form-title {
+    font-family: Dinn;
+    font-size: 29px;
+    color: #212121;
+}
+.form-subtitle {
+    font-size: 14px;
+}
+.form-input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.form-textarea {
+    height: 170px;
+    margin-bottom: 0;
+    resize: none;
+}
+.footer-right {
+    display: flex;
+    align-items: flex-end;
+}
+.form-button {
+    margin-bottom: 0;
+    background: #212121;
+    color: #fff;
+    border: none;
+    letter-spacing: 2px;
 }
