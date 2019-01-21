@@ -114,9 +114,17 @@
     box-sizing: border-box;
     transition: all 200ms ease-in;
 }
-.dropdown-help {
+.w-dropdown-help {
     width: 125px;
     border-bottom: solid 4px #e80781;
+}
+.m-dropdown-help {
+    width: 125px;
+    border-bottom: solid 4px #00a9dd;
+}
+.k-dropdown-help {
+    width: 125px;
+    border-bottom: solid 4px #ffa600;
 }
 .dropdown-fa {
     padding: 10px 12px;
@@ -136,6 +144,12 @@
 .woman-selected {
     color: #e80781;
 }
+.man-selected {
+    color: #00a9dd;
+}
+.kids-selected {
+    color: #ffa600;
+}
 .woman-selected:hover {
     color: #fff;
     transition: color 200ms ease-in;
@@ -144,7 +158,25 @@
     color: #e80781;
     transition: color 200ms ease-in;
 }
+.man-selected:hover {
+    color: #fff;
+    transition: color 200ms ease-in;
+}
+.man-hover:hover {
+    color: #00a9dd;
+    transition: color 200ms ease-in;
+}
+.kids-selected:hover {
+    color: #fff;
+    transition: color 200ms ease-in;
+}
+.kids-hover:hover {
+    color: #ffa600;
+    transition: color 200ms ease-in;
+}
+
 /* Sale Logo Colors */
+
 .woman-sale-logo {
     background: #e80781;
 }
@@ -156,6 +188,14 @@
 }
 .dropdown-whover:hover {
     background: #e80781;
+    transition: background 200ms ease-in;
+}
+.dropdown-mhover:hover {
+    background: #00a9dd;
+    transition: background 200ms ease-in;
+}
+.dropdown-khover:hover {
+    background: #ffa600;
     transition: background 200ms ease-in;
 }
 
@@ -366,6 +406,14 @@
     background: #e80781;
     border: none;
 }
+.man-form-button {
+    background: #00a9dd;
+    border: none;
+}
+.kids-form-button {
+    background: #ffa600;
+    border: none;
+}
 
 /* Home Section Styles */ 
 
@@ -376,6 +424,12 @@
 }
 .woman-section {
     background-image: url(../media/w-banner.jpg);
+}
+.man-section {
+    background-image: url(../media/m-banner.jpg);
+}
+.kids-section {
+    background-image: url(../media/k-banner.jpg);
 }
 .home-detail-container {
     width: 35%;
@@ -407,13 +461,21 @@
 .main-section {
     padding-top: 60px;
 }
-.waside-detail {
+.aside-detail {
     padding-bottom: 40px;
     box-sizing: border-box;
-    background-image: url(../media/waside-detail.png);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 15%;
+}
+#waside-detail {
+    background-image: url(../media/waside-detail.png);
+}
+#maside-detail {
+    background-image: url(../media/maside-detail.png);
+}
+#kaside-detail {
+    background-image: url(../media/kaside-detail.png);
 }
 .section-aligner {
     display: grid;
@@ -426,9 +488,6 @@
 .aside-title-gender {
     font-family: Dinn;
     font-size: 40px;
-}
-.woman-title {
-    color: #e80781;
 }
 .aside-list-container {
     margin-top: 25px;
