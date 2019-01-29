@@ -215,8 +215,46 @@
         </section>
 
         <section class="payment-container">
+            <div class="payment-title align"><span class="aside-title-gender woman-selected">MI COMPRA</span></div>
             <div class="align payment-aligner">
-                <div></div>
+
+                <section class="payment-section">
+                    <p class="purchase-summary-title"><strong>DATOS DE FACTURACIÓN</strong></p>
+                    <form action="#">
+                        <div class="billing-form-aligner">
+                            <p class="billing-form-text"><strong>E-Mail*:</strong></p>
+                            <div class="billing-form-input-div"><input type="email" placeholder="ejemplo@gmail.com" class="billing-form-input" required></div>
+                            <p class="billing-form-text"><strong>Cliente*:</strong></p>
+                            <div class="billing-form-input-div">
+                                <input type="text" placeholder="Nombre" class="billing-form-input" required>
+                                <input type="text" placeholder="Apellido" class="billing-form-input" required>
+                            </div>
+                            <p class="billing-form-text"><strong>Documento*:</strong></p>
+                            <div class="billing-form-input-div">
+                                <select name="dni" id="dni" class="billing-form-input">
+                                    <option value="1">Doc. Identidad</option>
+                                </select>
+                                <select name="contry" id="country" class="billing-form-input">
+                                    <option value="1">Uruguay</option>
+                                </select>
+                                <input type="text" placeholder="Número" class="billing-form-input" required>
+                            </div>
+                            <p class="billing-form-text"><strong>Teléfono*:</strong></p>
+                            <div class="billing-form-input-div"><input type="number" placeholder="09XXXXXXX" class="billing-form-input" required></div>
+                            <p class="billing-form-text"><strong>RUT:</strong></p>
+                            <div class="billing-form-input-div"><input type="number" placeholder="Número de RUT" class="billing-form-input" required></div>
+                            <p class="billing-form-text"><strong>Razón social:</strong></p>
+                            <div class="billing-form-input-div"><input type="text" placeholder="Nombre" class="billing-form-input" required></div>
+                            <div></div>
+                            <div class="billing-form-input-div"><input type="checkbox" required class="billing-form-checkbox"><p class="billing-form-text"><strong>Consumidor final</strong></p></div>
+                        </div>
+                        <div class="billing-form-buttons">
+                            <button class="baw-button white-button"><strong>ATRAS</strong></button>
+                            <button class="baw-button black-button"><strong>CONTINUAR</strong></button>
+                        </div>
+                    </form>
+                </section>
+
                 <div class="purchase-summary">
                     <p class="purchase-summary-title"><strong>RESUMEN DE COMPRA</strong></p>
                     <div class="purchase-details-list">
@@ -227,15 +265,12 @@
                         <p class="purchase-details-text"><strong>Sub-Total:</strong></p>
                         <p class="purchase-details-text"><strong>$ 4941</strong></p>
                         <p class="purchase-details-text"><strong>Cupón de Descuento:</strong></p>
-                        <div class="purchase-details-text">
-                            <input type="text" placeholder="Ingresar código" class="purchase-details-input">
-                        </div>
+                        <div class="purchase-details-text"><input type="text" placeholder="Ingresar código" class="purchase-details-input"></div>
                         <p class="purchase-details-text"><strong>Total:</strong></p>
                         <p class="purchase-details-text"><strong>$ 4941</strong></p>
                     </div>
                     <div class="purchase-copyright">
-                        <input type="checkbox" required>
-                        <p class="purchase-details-text no-border"><strong>Acepto términos y condiciones</strong></p>
+                        <input type="checkbox" required><p class="purchase-details-text no-border"><strong>Acepto términos y condiciones</strong></p>
                     </div>
                     <div class="purchase-button-container">
                         <button class="baw-button black-button"><strong>MODIFICAR COMPRA</strong></button>
