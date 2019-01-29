@@ -144,10 +144,19 @@
 .woman-selected {
     color: #e80781;
 }
+.woman-title {
+    color: #e80781;
+}
 .man-selected {
     color: #00a9dd;
 }
+.man-title {
+    color: #00a9dd;
+}
 .kids-selected {
+    color: #ffa600;
+}
+.kids-title {
     color: #ffa600;
 }
 .woman-selected:hover {
