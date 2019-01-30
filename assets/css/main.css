@@ -903,3 +903,90 @@ input[type=number]::-webkit-outer-spin-button {
     border: solid 2px #333333;
     margin-bottom: 0;
 }
+
+/* Pay Section Styles */
+
+.pay-form-container {
+    margin-top: 30px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    border-bottom: solid 2px #d3d3d3;
+}
+.payment-methods-container {
+    width: 100%;
+    height: 85px;
+    background: #d9d9d9;
+}
+.payment-methods-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    height: 85px;
+    margin: 0 auto;
+}
+.mercado-pago {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
+    width: 100%;
+    height: 85px;
+}
+.mercado-pago .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.mercado-pago .top input {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+.mercado-pago .top img {
+    height: 30px;
+    margin-left: 10px;
+}
+.mercado-pago .bottom p {
+    font-size: 12px;
+}
+.right-cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 85px;
+}
+.right-cards img {
+    height: 25px;
+    margin: 0 5px;
+}
+.bank-container {
+    display: flex;
+    width: 75%;
+    height: 60px;
+    margin: 15px 0;
+}
+.bank-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    background: #d9d9d9;
+    overflow: hidden;
+}
+.bank-content img {
+    height: 25px;
+    margin-left: 10px;
+}
+.bank-margin {
+    margin: 0 15px;
+}
+.abitab-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+}
+.abitab-text {
+    width: 60%;
+}
