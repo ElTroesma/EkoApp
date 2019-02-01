@@ -1071,3 +1071,49 @@ input[type=number]::-webkit-outer-spin-button {
     color: #000;
     transition: all 200ms ease-in;
 }
+
+/* Shipping Section Styles */
+
+.shipping-aligner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-top: 25px;
+}
+.shipping-container {}
+.border-right {
+    border-right: solid 2px #d3d3d3;
+    padding-right: 35px;
+    box-sizing: border-box;
+}
+#shipping-title {
+    margin-bottom: 20px;
+}
+.shipping-section-text {}
+.shipping-container .purchase-copyright {
+    margin: 10px 0;
+    height: inherit;
+}
+.shipping-input-container {
+    width: 100%;
+}
+.shipping-input-container .billing-form-input {
+    margin: 10px 0 20px;
+}
+.shipping-checkbox-aligner {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.shipping-checkbox-aligner p {
+    margin: 0 10px;
+}
+.shipping-checkbox-aligner input {
+    margin: 0;
+}
+.shipping-textarea {
+    height: 80px;
+    padding-top: 10px;
+    resize: none;
+}
