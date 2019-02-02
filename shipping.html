@@ -221,10 +221,11 @@
                 <section class="payment-section">
                     <p class="purchase-summary-title"><strong>DATOS DE ENVÍO</strong></p>
                     <div class="shipping-aligner">
+
                         <div class="shipping-container border-right">
                             <p class="shipping-section-text" id="shipping-title"><strong>MONTEVIDEO</strong></p>
-                            <div class="purchase-copyright"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Retiro en sucursal</strong></p></div>
-                            <div class="purchase-copyright" id="shipping-title"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Envío a domicilio</strong></p></div>
+                            <div class="purchase-copyright"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Retiro en Sucursal</strong></p></div>
+                            <div class="purchase-copyright" id="shipping-title"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Envío a Domicilio</strong></p></div>
                             <p class="shipping-section-text"><strong>Calle*:</strong></p>
                             <div class="shipping-input-container"><input type="text" placeholder="Ej.: Avda. Gral Flores" class="billing-form-input" required></div>
                             <p class="shipping-section-text"><strong>Número de puerta*:</strong></p>
@@ -234,13 +235,61 @@
                                 <input type="checkbox" required><p class="purchase-details-text no-border"><strong>Apto.*</strong></p>
                                 <input type="text" placeholder="Ej.:503" class="billing-form-input" required>
                             </div>
-                            <p class="shipping-section-text"><strong>Aclaraciones:</strong></p>
+                            <p class="shipping-section-text margin-top"><strong>Aclaraciones:</strong></p>
                             <div class="shipping-input-container">
-                                <textarea class="billing-form-input shipping-textarea" placeholder="Datos para facilitar la ubicación. Ej.: esquina, solar, manzana, block, etc."></textarea>
+                                <textarea id="no-margin" class="billing-form-input shipping-textarea" placeholder="Datos para facilitar la ubicación. Ej.: esquina, solar, manzana, block, etc."></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="shipping-container padding-left">
+                            <p class="shipping-section-text" id="shipping-title"><strong>INTERIOR</strong></p>
+                            <div class="purchase-copyright"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Retiro en Agencia</strong></p></div>
+                            <p class="shipping-section-text small-text"><strong>Envío a Tres Cruces sin costo.</strong></p>
+                            <p class="shipping-section-text small-text"><strong>(Flete a pagar en destino por el cliente)</strong></p>
+                            <div class="purchase-copyright"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Envío a Domicilio</strong></p></div>
+                            <p class="shipping-section-text margin-top"><strong>Departamento*:</strong></p>
+                            <div class="shipping-input-container"><input type="text" placeholder="Ej.: Artigas" class="billing-form-input" required></div>
+                            <p class="shipping-section-text"><strong>Localidad*:</strong></p>
+                            <div class="shipping-input-container"><input type="text" placeholder="Ej.: Bella Unión" class="billing-form-input" required></div>
+                            <p class="shipping-section-text"><strong>Número de puerta*:</strong></p>
+                            <div class="shipping-input-container"><input type="text" placeholder="Ej.: 2057" class="billing-form-input" required></div>
+                            <div class="shipping-checkbox-aligner">
+                                <input type="checkbox" required><p class="purchase-details-text no-border"><strong>Casa*</strong></p>
+                                <input type="checkbox" required><p class="purchase-details-text no-border"><strong>Apto.*</strong></p>
+                                <input type="text" placeholder="Ej.:503" class="billing-form-input" required>
+                            </div>
+                            <p class="shipping-section-text margin-top"><strong>Aclaraciones:</strong></p>
+                            <div class="shipping-input-container">
+                                <textarea id="no-margin" class="billing-form-input shipping-textarea" placeholder="Datos para facilitar la ubicación. Ej.: esquina, solar, manzana, block, etc."></textarea>
                             </div>
                         </div>
 
-                        <div class="shipping-container"></div>
+                        <div id="login-modal" class="shipping-container border-right">
+                            <p class="shipping-section-text" id="shipping-title"><strong>MONTEVIDEO</strong></p>
+                            <div class="purchase-copyright"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Retiro en Sucursal</strong></p></div>
+                            <div class="purchase-copyright" id="shipping-title"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Envío a Domicilio</strong></p></div>
+                            <p class="shipping-section-text"><strong>Retira:</strong></p>
+                            <div class="shipping-input-container"><input type="text" placeholder="Ej.: Luisa Pérez" class="billing-form-input" required></div>
+                            <p class="shipping-section-text"><strong>Lugar de Retiro:</strong></p>
+                            <p class="shipping-section-text"><strong>Arenal Grande 2030 esq. Blandengues:</strong></p>
+                        </div>
+
+                        <div id="login-modal" class="shipping-container padding-left">
+                            <p class="shipping-section-text" id="shipping-title"><strong>INTERIOR</strong></p>
+                            <div class="purchase-copyright"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Retiro en Agencia</strong></p></div>
+                            <p class="shipping-section-text small-text"><strong>Envío a Tres Cruces sin costo.</strong></p>
+                            <p class="shipping-section-text small-text"><strong>(Flete a pagar en destino por el cliente)</strong></p>
+                            <div class="purchase-copyright"><input type="checkbox" required><p class="purchase-details-text no-border"><strong>Envío a Domicilio</strong></p></div>
+                            <p class="shipping-section-text margin-top"><strong>Retira:</strong></p>
+                            <div class="shipping-input-container"><input type="text" placeholder="Ej.: Luisa Pérez" class="billing-form-input" required></div>
+                            <p class="shipping-section-text"><strong>Agencia:</strong></p>
+                            <div class="shipping-input-container"><input type="text" placeholder="Ej.: Agencia Central" class="billing-form-input" required></div>
+                        </div>
+
+                    </div>
+                    <div class="billing-form-buttons">
+                        <button class="baw-button white-button"><strong>ATRAS</strong></button>
+                        <button class="baw-button black-button"><strong>CONTINUAR</strong></button>
                     </div>
                 </section>
 

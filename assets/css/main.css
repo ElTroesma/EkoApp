@@ -1079,6 +1079,8 @@ input[type=number]::-webkit-outer-spin-button {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     margin-top: 25px;
+    padding-bottom: 30px;
+    border-bottom: solid 2px #d3d3d3;
 }
 .shipping-container {}
 .border-right {
@@ -1095,6 +1097,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: inherit;
 }
 .shipping-input-container {
+    display: flex;
     width: 100%;
 }
 .shipping-input-container .billing-form-input {
@@ -1116,4 +1119,17 @@ input[type=number]::-webkit-outer-spin-button {
     height: 80px;
     padding-top: 10px;
     resize: none;
+}
+.padding-left {
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+.small-text {
+    font-size: 12px;
+}
+.margin-top {
+    margin-top: 20px;
+}
+#no-margin {
+    margin-bottom: 0;
 }
